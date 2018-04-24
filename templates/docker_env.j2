@@ -1,4 +1,4 @@
 # Settings:
-{% for key, value in (docker_swarm_env_vars_defaults | default({}) | combine(docker_swarm_env_vars | default({}))).items() %}
+{% for key, value in (dockerapp_env_vars_defaults | default({}) | combine(dockerapp_env_vars | default({}))).items() %}
 {{ key }}={{ value }}
 {% endfor %}
