@@ -2,6 +2,6 @@
 - name: Set up application environment file
   template:
     src: docker_env.j2
-    dest: /etc/dockerapp-env
+    dest: /etc/dockerapp_env
   tags: spi-env
 
