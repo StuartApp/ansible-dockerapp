@@ -4,4 +4,5 @@
     src: docker_env.j2
     dest: /etc/dockerapp_env
   tags: spi-env
+  no_log: "{{not dockerapp_verbose|default(false)}}"
 
