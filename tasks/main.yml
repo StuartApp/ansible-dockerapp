@@ -2,7 +2,7 @@
 - name: Set up application environment file
   template:
     src: docker_env.j2
-    dest: /etc/dockerapp_env
-  tags: spi-env
+    dest: "{{ dockerapp_env_file }}"
+  tags: dockerapp_env
   no_log: "{{not dockerapp_verbose|default(false)}}"
 

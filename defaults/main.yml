@@ -1,0 +1,2 @@
+---
+dockerapp_env_file: "/etc/dockerapp_env"
