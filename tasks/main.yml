@@ -1,4 +1,10 @@
 ---
+- name: Use external vars files
+  include_vars:
+    file: "{{ vars_file }}"
+    name: "dockerapp_env_vars"
+  when: vars_file is defined
+
 - name: Set up application environment file
   template:
     src: docker_env.j2
